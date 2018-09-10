@@ -1,0 +1,13 @@
+.form {
+  &__field {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    border: 1px solid #c4c4c4;
+    outline: none;
+    color: #c4c4c4;
+    font-size: 15px;
+    @include font($font-family, normal, 300, $font-size);
+  }
+}

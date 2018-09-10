@@ -1,0 +1,36 @@
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/fonts';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  @include font($font-family, normal, 500, $font-size);
+  margin: 0;
+  padding: 0;
+  color: $primary-font-color-dark;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@import 'blocks/form';
+@import 'blocks/modal';
+@import 'blocks/comment';
+@import 'blocks/clustrer';

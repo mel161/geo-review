@@ -1,0 +1,60 @@
+.comment {
+  &__list {
+    max-height: 140px;
+    margin: 15px 0;
+    padding: 0;
+    overflow: scroll;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  &__form {
+    &-field-input {
+      border-radius: 17px;
+      line-height: 34px;
+    }
+
+    &-field-textarea {
+      height: 130px;
+      padding: 10px 15px;
+      border-radius: 17px;
+      resize: none;
+    }
+
+    &-title {
+      @include font($font-family, normal, 500, 16px);
+      margin-bottom: 15px;
+      color: $secondary;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    @include font($font-family, normal, 500, 16px);
+    margin-right: 10px;
+    color: #4f4f4f;
+  }
+
+  &__place {
+    @include font($font-family, normal, normal, 16px);
+    margin-right: 10px;
+    color: rgba(#4f4f4f, 0.75);
+  }
+
+  &__date {
+    @include font($font-family, normal, normal, 14px);
+    color: rgba(#4f4f4f, 0.75);
+  }
+
+  &__text {
+    @include font($font-family, normal, normal, 15px);
+    flex-basis: 100%;
+    color: #4f4f4f;
+  }
+}
